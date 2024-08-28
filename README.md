@@ -21,7 +21,7 @@ Somente letras minusculas são aceitas, não sendo possivel a utilização de le
 ![Projeto](https://github.com/user-attachments/assets/cce89506-99b6-4e98-86b9-c9365f960f9f)
 
 
-![Video](https://github.com/user-attachments/assets/deb97708-5f5d-48ad-ad87-c12d05c8258c)
+(https://github.com/user-attachments/assets/deb97708-5f5d-48ad-ad87-c12d05c8258c)
 
 
 
