@@ -1,0 +1,58 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="./assets/pink.png">
+        <title>Decodificador de texto</title>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="./assets/pink.png" alt ="Baleia rosa com pérola no nariz">
+        </header>
+    <main>
+            <section>
+                <textarea class="text-area" cols="41" rows="4" wrap="soft"placeholder="Digite seu texto!"></textarea>
+
+                <div class="alerta">
+                    <h6>
+                        <img src="./assets/exclamação.png" alt="aviso">
+                        Apenas letras minúsculas e sem acento.
+                    </h6>
+                </div>
+
+                <div class="botoes">
+                    <button class="encriptar" onclick="btnEncriptar()">Criptografar</button>
+                    <button class="descriptografar" onclick="btnDesencriptar()">Descriptografar</button>
+
+                </div>
+
+            </section>
+
+            <section class="retangulo__direito__botao">
+    
+                
+                <textarea disabled class="mensagem" cols="20" rows="10" wrap="soft" placeholder="Nenhuma mensagem encontrada!"></textarea>
+                
+                <div class="copiar_Texto">
+                    <button class="copiar" onclick="copiar()">Copiar</button>
+                    <button class="limpar" onclick="limpar()">Limpar</button>
+                </div>
+                
+                
+                
+            </section>
+            
+            
+
+            
+    </main>
+    <div class="producao">
+        <footer>Desenvolvido por <a href="https://github.com/kendracristina">Kendra Cristina<img class="github" src="./assets/github.png"></a></footer>
+        </div>
+        
+        <script src="decodificador.js"></script>
+</body>
+
+</html>
