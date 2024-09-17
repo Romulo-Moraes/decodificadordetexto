@@ -1,6 +1,6 @@
 <h1 align="center">Decodificador de texto</h1>
 
-Software para decodificação e codificação de textos, onde foi utlizado linguagem JavaScript juntamente com HTML e CSS. Nele foi utilizado os seguintes parametros:
+Software para decodificação e codificação de textos, onde foi utilizado linguagem JavaScript juntamente com HTML e CSS. Nele foi utilizado os seguintes parametros:
 
 A letra "e" é convertida para "enter"
 A letra "i" é convertida para "imes"
