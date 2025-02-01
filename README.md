@@ -35,4 +35,4 @@ https://github.com/user-attachments/assets/deb97708-5f5d-48ad-ad87-c12d05c8258c
 ## Autores
 
 - [@kendracristina](https://www.linkedin.com/in/kendra-cristina/)
-- [Rômulo Peres](https://github.com/Romulo-Moraes/)
+- [Rômulo Peres](https://www.linkedin.com/in/r%C3%B4mulo-peres-81a613231/)

@@ -35,6 +35,16 @@ function btnEncriptar() {
     removerImagemDeFundo();
 }
 
+function converteNumero(numero) {
+    if (numero < 8) {
+	numero ^= 0b11;
+    } else {
+	numero = numero == 8 ? 9 : 8;
+    }
+
+    return numero;
+}
+
 function criptografar(stringEncriptada) {
     let matrizCodigo = [["e" ,"enter",], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
     stringEncriptada = stringEncriptada.toLowerCase();
@@ -47,16 +57,12 @@ function criptografar(stringEncriptada) {
     }
 
     for(let i = 0; i < stringEncriptada.length; i++) {
-	let numeroConvertido = Number.parseInt(stringEncriptada[i]);
+	let numero = Number.parseInt(stringEncriptada[i]);
 	
-	if (!isNaN(numeroConvertido)) {
-	    if (numeroConvertido < 8) {
-		numeroConvertido ^= 0b11;
-	    } else {
-		numeroConvertido = numeroConvertido == 8 ? 9 : 8;
-	    }
+	if (!isNaN(numero)) {
+	    numero = converteNumero(numero);
 
-	    stringEncriptada = stringEncriptada.slice(0, i) + numeroConvertido.toString() + stringEncriptada.slice(i + 1);
+	    stringEncriptada = stringEncriptada.slice(0, i) + numero.toString() + stringEncriptada.slice(i + 1);
 	} else if (simbolos.includes(stringEncriptada[i]) && i != 0) {
 	    let indice = simbolos.indexOf(stringEncriptada[i]);
 
@@ -88,16 +94,12 @@ function descriptografar(stringDesencriptada) {
     }
 
     for(let i = 0; i < stringDesencriptada.length; i++) {
-	let numeroConvertido = Number.parseInt(stringDesencriptada[i]);
+	let numero = Number.parseInt(stringDesencriptada[i]);
 
-	if (!isNaN(numeroConvertido)) {
-	    if (numeroConvertido < 8) {
-		numeroConvertido ^= 0b11;
-	    } else {
-		numeroConvertido = numeroConvertido == 8 ? 9 : 8;
-	    }
+	if (!isNaN(numero)) {
+	    numero = converteNumero(numero);
 
-	    stringDesencriptada = stringDesencriptada.slice(0, i) + numeroConvertido.toString() + stringDesencriptada.slice(i + 1);
+	    stringDesencriptada = stringDesencriptada.slice(0, i) + numero.toString() + stringDesencriptada.slice(i + 1);
 	} else if(simbolos.includes(stringDesencriptada[i]) && i != 0) {
 	    let indice = simbolos.indexOf(stringDesencriptada[i]);
 
